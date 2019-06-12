@@ -1,0 +1,26 @@
+{
+  "name": "@daybr3ak/transform-bmptozpl",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-ts": "tsc",
+    "build": "npm run build-ts"
+  },
+  "keywords": [],
+  "author": "Benjamin GROENEVELD",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "typescript": "^3.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DayBr3ak/transform-bmptozpl.git"
+  },
+  "dependencies": {
+    "jimp": "^0.6.4"
+  }
+}

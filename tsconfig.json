@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "declaration": true,
+      "esModuleInterop": true,
+      "target": "es6",
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "strict": true,
+      "outDir": "dist",
+      "baseUrl": ".",
+      "pretty": true /* Stylize errors and messages using color and context. */,
+      "paths": {
+          "*": [
+              "node_modules/*",
+              "src/types/*"
+          ]
+      }
+  },
+  "include": [
+      "src/**/*"
+  ]
+}
