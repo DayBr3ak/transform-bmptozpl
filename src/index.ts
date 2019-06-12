@@ -32,6 +32,7 @@ export function transformBmpToZpl(zplInit?: string): Transform {
     imageToZpl(data, zplInit)
       .then(zpl => {
         stream.push(zpl);
+        callback();
       })
       .catch(callback);
   };
