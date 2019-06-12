@@ -15,6 +15,9 @@ const AllTheSame = (a: number[], b: number[]) => {
   return true;
 };
 
+const lowString = " GHIJKLMNOPQRSTUVWXY";
+const highString = lowString.toLowerCase();
+
 const getRepeatCode = (repeatCount: number) => {
   if (repeatCount > 419) {
     throw new Error("out of range");
@@ -22,9 +25,6 @@ const getRepeatCode = (repeatCount: number) => {
 
   let high = Math.floor(repeatCount / 20);
   let low = repeatCount % 20;
-
-  const lowString = " GHIJKLMNOPQRSTUVWXY";
-  const highString = " ghijklmnopqrstuvwxyz";
 
   let repeatStr = "";
   if (high > 0) {
@@ -103,7 +103,7 @@ const appendLine = (
  * @returns zpl string
  */
 function _decodeImageIntoZpl(image: jimp): string {
-  const filename = "R:TEST.GRF";
+  const filename = "R:FOO.GRF";
   const stride = Math.floor((image.bitmap.width + 7) / 8);
   const rightMask = Byte(0xff << (stride * 8 - image.bitmap.width));
   const zplBuilder = [];
