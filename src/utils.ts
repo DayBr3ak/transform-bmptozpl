@@ -1,4 +1,6 @@
 import jimp from "jimp";
+// unfortunately jimp comes with tons of dependencies and a babel polyfill..
+// we only need to be able to read a bmp file.
 
 /**
  * Allow byte masking
